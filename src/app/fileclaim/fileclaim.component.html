@@ -1,0 +1,88 @@
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid">
+    <div class="row ms-5 p-1">
+        <div class="col-12 ms-5">
+            <mat-card class="ms-1 mt-2 ms-4 mb-0" id="tCard">Claim Pre-Qualification<mat-icon
+                    style="margin-left:60% ;margin-bottom: -6px;color:blue;">reorder</mat-icon>&nbsp; Claims History & Status
+            </mat-card>
+            <mat-card class="mt-1 ms-4" style="width:80% ;">
+                <h5>To get started with the claim process,please answer the following questions.</h5>
+                <h4><b>Do you still have possession of the device?</b></h4>
+                <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" *ngFor="let q of ques1" [value]="q">
+                        {{q}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </mat-card>
+            <mat-card class="mt-1 ms-4" style="width:80% ;">
+                <h4><b>Is your device damaged in some way?</b></h4>
+                <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" *ngFor="let q of ques1" [value]="q">
+                        {{q}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </mat-card>
+            <mat-card class="mt-1 ms-4"  style="width:80% ;">
+                <h4><b>Confirm the device Category,Brand and Model or select this information below.</b></h4>
+                <mat-form-field appearance="outline" >
+                    <mat-label>Device Type</mat-label>
+                    <mat-select style="width:100% ;">
+                        <mat-option value="Latop">Latop</mat-option>
+                        <mat-option value="PC">PC</mat-option>
+                        <mat-option value="Mobile">Mobile</mat-option>
+                    </mat-select>
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint>select Device</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Brand</mat-label>
+                    <mat-select style="width:100% ;">
+                        <mat-option value="Apple">Apple</mat-option>
+                        <mat-option value="Lenova">Lenova</mat-option>
+                        <mat-option value="HP">HP</mat-option>
+                    </mat-select>
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint>select Brand</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Model</mat-label>
+                    <mat-select style="width:100% ;">
+                        <mat-option value="MacBookPro">MacBookPro</mat-option>
+                        <mat-option value="MacBookProAir">MacBookProAir</mat-option>
+                    </mat-select>
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint>select Model</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Device Nickname</mat-label>
+                    <input matInput placeholder="Device Nickname">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint>Nickname</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Serial Number(Option)</mat-label>
+                    <input matInput placeholder="Serial Number">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint>SerialNumber</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Purchase Price</mat-label>
+                    <input matInput type="number" class="example-right-align" placeholder="0">
+                    <span matPrefix></span>
+                    <span matSuffix>.00</span>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Pruchase Date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <h5 class="text-center">Upon completion you'll be taken to our Assurant claims site.</h5>
+                <button mat-raised-button routerLink="/startclaim" color="primary">Start A Claim</button>
+            </mat-card>
+            
+
+        </div>
+    </div>
+</div>

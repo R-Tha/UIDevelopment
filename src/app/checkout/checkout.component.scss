@@ -1,0 +1,76 @@
+.example-form {
+    min-width: 650px;
+    max-width: 500px;
+    width: 500px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    
+  }
+  mat-form-field{
+    width: 50%;
+  }
+  .example-radio-group {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 10px;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 5px 40px;
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  a{
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+  #FileCard{
+    margin-left:40px;
+    font-size: 20px;
+  }
+  .dashboard{
+    padding-left:20px;
+    background-color: rgb(104,104,206);
+    color:white;
+  }
+  .cliamsucess{
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 12px;
+    margin-bottom: -30px;
+    width: 700px;
+    height:20px;
+    padding: 20px;
+    margin-left:400px;
+    border-color:2px solid rgb(87,139,87);
+    background-color: rgba(198,243,227,0.87);
+  }
+  .close{
+    float:right;
+    margin-top: -15px;
+    background-color: rgba(198,243,227,0.87);
+    border:none;
+  }

@@ -1,0 +1,44 @@
+#tCard {
+    width: 80%;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+  }
+  .example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+  mat-form-field{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 30px 10px 50px;
+    align-items: flex-start;
+    width: 60%;
+  }
+  button{
+    margin-left: 310px;
+    width: 30%;
+  }
+  mat-select{
+    width: 80%;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  
+  
+  
