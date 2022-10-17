@@ -8,71 +8,88 @@
     </mat-toolbar-row>
 </mat-toolbar>
 <div class="container-fluid">
-    <mat-card class="ms-1 mt-2 mb-0 bg-primary" id="TextCard" >
+    <mat-card class="ms-1 mt-2 mb-0 bg-primary" id="TextCard">
         <span id="FileCard"></span>
         File a Claim
     </mat-card>
 </div>
 <div>
-    <mat-card class=" mt-5" style="width:40% ;margin-left: 350px;background-color:rgb(207, 231, 214);">
-    Your claim has been sucessfully submitted</mat-card>
-    <!-- <button class="close" (click)="closebutton()">X</button> -->
+    <mat-card style="height:280px; width:23%;margin:89px 0px 0px 980px;">
+        <img src="../assets/shopping.png" style="width:30%;height:90px;">
+        <h3 class="mt-0" style="display:inline;">Tharun Macbook</h3><br>
+        <h6 style="display:inline;">Macbook pro</h6>
+        <p>
+            Policy Number<span style="float:right;">0987654321</span>
+        </p>
+        <p>
+            Serial Number<span style="float:right;">12356789</span>
+        </p>
+        <p>
+            Policy start date<span style="float:right;">08/12/2003</span>
+        </p>
+        <p>
+            Policy end date<span style="float:right;">07/19/2022</span>
+        </p>
+    </mat-card>
 </div>
-<form active="#" class="form">
-    <mat-card class="mt-5" style="width:60% ;margin-left: 250px;">
-    <h5 style="float:left;"><b>claim number : Dx543291RD5</b></h5>
-    <br><br><br>
-    <section>
-        <p>Tour claim has been submitted and we are just checking the last few details.if your cliam is
-            approved.we will send you a shipping label so you can send us your defective device</p>
-        <form action=""></form>
-        repair.
-        <p>we will be back in touch within 1-2 working dayswith your cliam decision.in the meantime
-            you can check the status of your cliamon your dashboard.</p>
-    </section>
-    <section>
-        <h4><b>Deductible Fee</b></h4>
-        <h3 style="font-weight:500;">Thank you-your payment details have been confirmed</h3>
-        <div class="img "><img src="../assets/payment.PNG"  alt="" style="width:450px;height:150px;margin-left:170px ;"></div>
-    </section>
-    <section class="claim-details">
-        <h3 class="flex jc-space-between"></h3>
-        <h3>
-            <span><b>Claim details</b></span>
-        </h3>
-        <span>Date of incident</span><span style="float:right;">12/10/2021</span>
 
-        <p class="flex jc-space-between">
-            <span>Reason for cliam</span><span style="float:right;">My product is not functioning properly</span>
-        </p>
-        <p class="flex jc-space-between">
-            <span>Description</span><span style="float:right;">Lorerm ipsum is typed here</span>
-        </p>
-    </section>
-    <section class="fulfillment-details">
-        <h3><span><b>Device information</b></span><span
-                style="color:rgb(115,177,239);float:right;font-size:15px"></span></h3>
-        <h4>Send to us</h4>
-        <p><span>Delivery address</span><span style="float:right;">2 cherry road,Boston, MA,02148</span></p>
-    </section>
-    <section class="personal-details">
-        <h3><span><b>Personal information</b></span><span style="color:blue;float:right;"><a href="#"
-                    style="color:rgb(115,177,239)">Edit</a></span></h3>
+<mat-card style="width:40% ;margin:-350px 0px 0px 250px;background-color:rgb(207, 231, 214);">
+    Your claim has been sucessfully submitted</mat-card>
+<!-- <button class="close" (click)="closebutton()">X</button> -->
 
-        <p class="flex jc-space-between"><span>Full Name</span><span style="float:right;">Steve smith</span></p>
+<form active="#" class="form" style='margin:50px 0px 0px 150px;width: 750px;'>
+    <mat-card>
+        <h3 ><b>Claim number : Dx543291RD5</b></h3> 
+            <p>Tour claim has been submitted and we are just checking the last few details.if your cliam is
+                approved.we will send you a shipping label so you can send us your defective device for repair</p><br>
+            <p>we will be back in touch within 1-2 working dayswith your cliam decision.in the meantime
+                you can check the status of your cliamon your dashboard.</p>
+            <h4><b>Deductible Fee</b></h4>
+            <hr>
+            <h3 style="font-weight:500;">Thank you-your payment details have been confirmed</h3>
+            <div class="img "><img src="../assets/payment.PNG" alt=""
+                    style="width:450px;height:150px;margin-left:170px ;"></div>
+    
+        <section class="claim-details">
+            <h3 class="flex jc-space-between"></h3>
+            <h3>
+                <span><b>Claim details</b></span>
+            </h3>
+            <span>Date of incident</span><span style="float:right;">12/10/2021</span>
 
-        <p class="flex jc-space-between"><span>Address</span><span style="float:right;">123 main street atlanta GA
-                30031</span></p>
+            <p class="flex jc-space-between">
+                <span>Reason for cliam</span><span style="float:right;">My product is not functioning properly</span>
+            </p>
+            <p class="flex jc-space-between">
+                <span>Description</span><span style="float:right;">Lorerm ipsum is typed here</span>
+            </p>
+        </section>
+        <section class="fulfillment-details">
+            <h3><span><b>Device information</b></span><span
+                    style="color:rgb(115,177,239);float:right;font-size:15px"></span></h3>
+            <h4>Send to us</h4>
+            <p><span>Delivery address</span><span style="float:right;">2 cherry road,Boston, MA,02148</span></p>
+        </section>
+        <section class="personal-details">
+            <h3><span><b>Personal information</b></span><span style="color:blue;float:right;"><a href="#"
+                        style="color:rgb(115,177,239)">Edit</a></span></h3>
 
-        <p class="flex-jc-space-between"><span>Email address</span><span
-                style="float:right;">steve.smith@gmail.com</span></p>
+            <p class="flex jc-space-between"><span>Full Name</span><span style="float:right;">Steve smith</span></p>
 
-        <p class="flex-jc-space-between"><span>Contact Number</span><span style="float:right;">077015520226</span></p>
+            <p class="flex jc-space-between"><span>Address</span><span style="float:right;">123 main street atlanta GA
+                    30031</span></p>
 
-    </section>
-    <hr style="border-color:rgba(183,180,180,0.847);margin-top:12px;margin-bottom:2px;">
-    <div class="btns-group" style="margin-top:30px;">
-        <button class=" btn btn-primary ms-5" style="align-items:center;color:white;width:250px;" routerLink="/fileclaim">GotoDashboard</button>
-    </div>
-</mat-card>
+            <p class="flex-jc-space-between"><span>Email address</span><span
+                    style="float:right;">steve.smith@gmail.com</span></p>
+
+            <p class="flex-jc-space-between"><span>Contact Number</span><span style="float:right;">077015520226</span>
+            </p>
+
+        </section>
+        <hr style="border-color:rgba(183,180,180,0.847);margin-top:12px;margin-bottom:2px;">
+        <div class="btns-group" style="margin-top:30px;">
+            <button class=" btn btn-primary ms-5" style="align-items:center;color:white;width:250px;"
+                routerLink="/fileclaim">GotoDashboard</button>
+        </div>
+    </mat-card>
 </form>

@@ -10,6 +10,10 @@ import { ProgressComponent } from '../progress/progress.component';
 export class StartclaimComponent implements OnInit, AfterViewInit {
 
   shiping: string[] = ['Same as policy', 'New Address'];
+  date!:string;
+  description!:string;
+  claim!:string
+
 
 
   constructor (){}
@@ -23,7 +27,7 @@ export class StartclaimComponent implements OnInit, AfterViewInit {
   });
 
   step2form=new FormGroup({
-    food: new FormControl('',Validators.required),
+    foot: new FormControl('',Validators.required),
   })
 
 

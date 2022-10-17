@@ -11,6 +11,7 @@ describe('ClaimProgressComponent', () => {
       declarations: [ ClaimProgressComponent ]
     })
     .compileComponents();
+    
 
     fixture = TestBed.createComponent(ClaimProgressComponent);
     component = fixture.componentInstance;

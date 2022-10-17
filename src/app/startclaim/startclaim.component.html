@@ -15,28 +15,47 @@
     <mat-card class="ms-1 mt-2 mb-0" id="TextCard"><span id="FileCard"></span> File a Claim
     </mat-card>
 </div>
+<div>
+    <mat-card style="height:280px; width:23%;margin:89px 0px 0px 980px;">
+        <img src="../assets/shopping.png" style="width:30%;height:90px;">
+        <h3 class="mt-0" style="display:inline;">Tharun Macbook</h3><br>
+        <h6 style="display:inline;">Macbook pro</h6>
+        <p>
+            Policy Number<span style="float:right;">0987654321</span>
+        </p>
+        <p>
+            Serial Number<span style="float:right;">12356789</span>
+        </p>
+        <p>
+            Policy start date<span style="float:right;">08/12/2003</span>
+        </p>
+        <p>
+            Policy end date<span style="float:right;">07/19/2022</span>
+        </p>
+    </mat-card>
+</div>
 <app-progress class="mt-2 mb-0" #progress (stateChange)="onStateChange($event)">
     <app-progress-step>
-        <form style="margin-top:-38px ;" [formGroup]="step1Form">
+        <form style='margin:-313px 0px 0px -245px;width: 740px;' [formGroup]="step1Form">
             <mat-card>
                 <h3>Please tell us what happened</h3>
                 <mat-form-field appearance="fill">
                     <mat-label>Date of Pruchase</mat-label>
-                    <input formControlName="date" matInput [matDatepicker]="picker">
+                    <input formControlName="date" [(ngModel)]="date" matInput [matDatepicker]="picker">
                     <mat-hint>MM/DD/YYYY</mat-hint>
                     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
                 <mat-form-field class="example-full-width mt-3 mb-3 " appearance="fill">
                     <mat-label>Describe the issue or reason for your request</mat-label>
-                    <textarea formControlName="comment" style="height:150px ; width: 100%;" matInput #message
+                    <textarea formControlName="comment" [(ngModel)]="description" style="height:150px ; width: 100%;" matInput #message
                         maxlength="256" placeholder="Ex. I need help with..."></textarea>
                     <!-- <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint> -->
                     <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
                 </mat-form-field>
                 <mat-form-field appearance="outline" class="mb-4 mt-3">
                     <mat-label>Select a reason for your claim/request</mat-label>
-                    <mat-select placeholder="claim/request" formControlName="claim">
+                    <mat-select placeholder="claim/request" [(ngModel)]="claim" formControlName="claim">
                         <mat-option value="Screen Break">Screen Break</mat-option>
                         <mat-option value="Battery Death">Battery Death</mat-option>
                         <mat-option value="Keypad not working">Keypad not working</mat-option>
@@ -60,7 +79,7 @@
         </form>
     </app-progress-step>
     <app-progress-step>
-        <form [formGroup]='step2form' style="margin-top:-38px ;">
+        <form [formGroup]='step2form' style="margin:-313px 0px 0px -245px;width:740px">
             <mat-card>
                 <h1><b>Select how you would like your product to be serviced</b></h1>
                 <iframe
@@ -92,7 +111,7 @@
     </app-progress-step>
     <app-progress-step>
        
-            <mat-card style="margin-top:-38px ;">
+            <mat-card style="margin:-313px 0px 0px -245px;width:740px;">
                 <h3><b>Mall in Repair</b></h3>
                 <p>
                     Once your device is repaired it will be shipped to the address provided below
@@ -119,7 +138,7 @@
 
     </app-progress-step>
     <app-progress-step>
-        <mat-card style="margin-top:-38px ;">
+        <mat-card style="margin:-313px 0px 0px -245px;width:740px;">
             <h4><b>Claim Details</b></h4>
             <!-- <p> -->
                 <section class="claim-details">

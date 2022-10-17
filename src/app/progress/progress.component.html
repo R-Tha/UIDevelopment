@@ -1,6 +1,6 @@
-<div class="step-progress">
+<div class="step-progress" style='margin:-430px 0px 0px -240px;width: 750px;'>
     <div class="container" #container>
-      <ng-container *ngFor="let item of itemProgressList; index as i">
+      <ng-container *ngFor="let item of itemProgressList; index as i" style='margin:50px 0px 0px 150px;width: 750px;'>
         <div
           class="check-box"
           [ngClass]="{
@@ -17,6 +17,7 @@
               complete: item.status === 'completed',
               active: item.status === 'in progress'
             }"
+
             class="progress-line"
             *ngIf="i !== itemLength - 1"
           >
