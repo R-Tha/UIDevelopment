@@ -13,6 +13,11 @@ export class StartclaimComponent implements OnInit, AfterViewInit {
   date!:string;
   description!:string;
   claim!:string
+  titleSelected:any
+
+
+
+  titles = ['Mail in Repair', 'In Store Repair', 'Reimbursement'];
 
 
 
@@ -36,6 +41,11 @@ export class StartclaimComponent implements OnInit, AfterViewInit {
 
   goNext(progress: ProgressComponent) {
     progress.next();
+  }
+
+
+  select(title:any) {
+    this.titleSelected = title;
   }
 
   onStateChange(event: any) {

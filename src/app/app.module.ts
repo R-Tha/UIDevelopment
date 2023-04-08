@@ -27,6 +27,7 @@ import { ProgressHelperService } from './services/progress-steps-bar.service';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { Step1Component } from './step1/step1.component';
 
 
 
@@ -47,6 +48,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     CheckoutComponent,
     FooterComponent,
     NavBarComponent,
+    Step1Component,
     
    
   ],
